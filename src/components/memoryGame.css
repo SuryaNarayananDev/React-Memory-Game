@@ -1,0 +1,75 @@
+.memorygame-container{
+    height: 1500px;
+    width: 100%;
+    margin-top: 170px;
+
+}
+.mg-title{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-top: 20px;
+   margin-bottom: -70px;
+   color: cadetblue;
+}
+
+.flip-card {
+    margin-top: 10%;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card.active .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    border: 4px solid black;
+  }
+  
+  .flip-card-front {
+    background-color: rgb(45, 45, 45);
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #343434;
+    color: white;
+    align-content: center;
+    font-size: 50px;
+    transform: rotateY(180deg);
+  }
+
+  .game-completed {
+    background-color: rgba(0, 0, 0, 0.764);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    color: antiquewhite;
+  }
+  
+  .game-completed h1 {
+    font-size: 60px;
+  }
+
